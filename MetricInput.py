@@ -27,7 +27,7 @@ def metric(namespace, metricname, value):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Take metric inputs')
-    parser.add_argument('--namespace', '-N', required=True, type=str, help='Namespace of the metric')
+    parser.add_argument('--namespace', '-n', required=True, type=str, help='Namespace of the metric')
     parser.add_argument('--metricname', '-m', required=True, type=str, help='Metric name')
     parser.add_argument('--value', '-v', required=False, type=float, help='Value of the metric')
 
